@@ -3,6 +3,7 @@ from flask import request as reqs
 from flask import make_response,jsonify
 import json
 from weather import *
+
 app = Flask(__name__)
 
 

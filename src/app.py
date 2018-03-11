@@ -5,6 +5,11 @@ import json
 from weather import *
 app = Flask(__name__)
 
+
+@app.route("/")
+def main():
+    return "Hello world"
+
 @app.route("/webhook", methods=['POST'])
 def webhook():
     req = reqs.get_json(silent=True,force=True)
